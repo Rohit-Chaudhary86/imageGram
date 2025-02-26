@@ -12,7 +12,7 @@ const postSchema=new mongoose.Schema({
     require:true,
   },
   user:{
-    type:mongoose.Schema.Types.ObjectId,  //define type of user id
+    type:mongoose.Schema.Types.ObjectId,  //define type of user id (to mention id of another doc we need "objectId" object)
     ref:"user"  //tjis will link it to user and it will get id of user
   }
 });
